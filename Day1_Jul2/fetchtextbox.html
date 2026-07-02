@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+     <!-- <input/>
+    <input>
+    <input></input>-->
+   <label for="num1">Num1</label> 
+   <input type="text" id="num1"> <br/>
+  <label for="num2">Num2</label> 
+  <input type="text" value="2" id="num2"/><br/>
+    <button type="button" onclick="fetchNum2Data()">fetch num2 data</button>
+
+    <script>
+        //DOM - document object model
+        function fetchNum2Data(){   
+            var data = document.getElementById("num2").value
+            document.write(data)
+        }
+    </script>
+</body>
+</html>

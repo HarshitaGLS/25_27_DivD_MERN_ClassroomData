@@ -1,0 +1,62 @@
+MERN - 
+Javascript
+mongoDB
+Expressjs
+ReactJS
+Nodejs
+
+
+Javascript  = 
+1. in html page -
+<script></script>
+
+
+2. sep js file and include it in html
+<script src="demo.js"></script> 
+
+
+Everything in JS is an object
+window object 
+document object 
+
+button - click - alert message 
+window.alert() or alert()
+window.confirm() or confirm() - ok (true) and cancel (false)
+
+document.getElementById("num2").value
+'2'
+document.getElementById("num2").getAttribute("value")
+'2'
+document.getElementById("num2").value
+'harshita'
+document.getElementById("num2").getAttribute("value")
+'2'
+
+Tasks Assigned -
+1. html attribute vs DOM property
+2. button tag and input tag (type="button")
+3. can interpreter works on browers only??
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
