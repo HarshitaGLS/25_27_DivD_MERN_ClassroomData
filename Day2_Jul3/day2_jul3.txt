@@ -1,0 +1,108 @@
+parseInt() , parseFloat()
+
+"12.3" =>12.3
+"12" =>12 
+
+Number object 
+
+var vs let (ES6)
+
+dynamically typed vs statically typed 
+loosly coupled vs strongly coupled
+
+datatype-
+number 
+boolean
+null
+undefined
+string 
+object - Array, String, Date, Math, Boolean, RegExp etc. 
+
+block scope  - let 
+{
+
+}
+var - function scope
+
+
+Task - 
+1.  what will be the converted value of textbox it is empty (not asigned any value) - 
+a. if textbox is wrapped with parseInt 
+b. id textbox is wrapped with Number
+
+2. null vs undefined
+
+3. input type=image and img tag
+
+
+functions - 
+1 regular function
+2 function expression
+3 arrow function
+
+
+operators - 
+1. +,-,*,/,%, **
+
+2**3 => 2 power 3 = 2*2*2 = 8
+
+10/2 = 5
+10%2 = 0
+2 /10 = 0.2
+2%10  = 2
+
+2. < > <= >= == != === !==
+
+== and ===
+
+3. = ,+=,-=,*= etc..
+
+4. && || , ! 
+
+5. ternary (conditional) operators  - ?:
+let a = 1
+let b =3
+a>b ? console.log(a) : console.log(b)
+let c = a>b ? a : b
+
+
+6. ++ ,--
+7. nullish coealsing operator (??)
+8. typeOf , instaceOf
+
+let name = "Harshita"
+let userlogin = name
+console.log(`Welcome ${userlogin}`)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
