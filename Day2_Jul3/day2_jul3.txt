@@ -67,7 +67,7 @@ let c = a>b ? a : b
 
 
 6. ++ ,--
-7. nullish coealsing operator (??)
+7. nullish coalesing operator (??)
 8. typeOf , instaceOf
 
 let name = "Harshita"

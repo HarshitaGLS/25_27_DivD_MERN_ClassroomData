@@ -1,0 +1,35 @@
+Object -> built in  - Array, String, Math, Date, Boolean and RegExp, Number
+       -> userdefined  
+
+functions - camelcase
+Object - Initcap
+
+Array - is an Object
+property - length
+functions -
+push
+pop
+slice
+splice 
+Es6 functions 
+
+/////////////
+
+Array - 
+let arr = [3,4,6,7,9, "rhejhr",true,2.3]
+
+let arr1 = new Array(3,4,5,7,8)
+
+callback function - 
+forEach()
+
+function fun(num1,num2,fun1){
+    let str="GLS"
+    console.log(num1+num2)
+    fun1(str)
+}
+fun(2,3,function(str1){console.log(`callback function ${str1}`)})
+
+//num1 =2 , num2 =3 , fun1 =function(){console.log("callback function)}
+
+arr.forEach((val)=>{ })
