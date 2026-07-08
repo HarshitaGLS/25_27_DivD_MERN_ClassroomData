@@ -1,0 +1,15 @@
+callback function
+
+function fun(num1,num2,fun1){
+    fun1("gls")
+}
+fun(2,3,(str)=>console.log(`${str}`))
+/////////////////////////////
+
+String -  
+let str = "hello" //string 
+let str1 = new String("hello world") //String object
+split - hello world welcome to GLS =>  ["hello","world","wlecome", "to","GLS"]
+
+data ="J M @ 0 1"
+data.split(" ").join("") => ["J","M","@",0,1] =>join(["J","M","@",0,1]) =>JM@01

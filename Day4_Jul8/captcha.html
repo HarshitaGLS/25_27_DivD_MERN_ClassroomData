@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body onload="generateCaptcha()">
+    <button type="button" id="btn">1234</button>
+    <input type="text" id="cap"><br/>
+    <button type="button" id="btn1">Check Captcha</button><br/>
+    <div id="checkcap"></div>
+    <script>
+ 
+
+        let generateCaptcha = ()=>{
+            let captchaVal =  document.getElementById("btn")
+            let data = ""
+        //     for(let i=1;i<=4;i++){
+        //     data += `${Math.floor(Math.random()*10)} ` //0 to 9
+        //     }
+        //    captchaVal.innerHTML = data
+
+        let str = `abcdefghiklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0987654321!@#$%&*+=`
+        for(let i=1;i<=6;i++){
+            data += `${str.charAt(Math.floor(Math.random()*str.length))} ` //0 to 50 => 0 to 49 => str.charAt(48)
+            }
+           captchaVal.innerHTML = data
+        }
+
+        document.getElementById("btn1").onclick =()=>{
+        let result = document.getElementById("checkcap")
+        let btnvalue = (document.getElementById("btn").innerHTML).split(" ").join("")
+        let txtval = (document.getElementById("cap").value).split(" ").join("")
+        console.log(btnvalue,txtval);
+        
+        if(txtval==""){
+            result.innerHTML = "Please fill the field"
+            result.style.color = "red"
+            result.style.backgroundColor = "yellow"   
+        }
+        else if(txtval != btnvalue) 
+            result.innerHTML ="Invalid captcha"
+        else 
+            result.innerHTML =""
+        }
+
+        //Math object -
+    //    document.write(Math.PI);
+    //    document.write(Math.min(23,2,34,6,8,1,0,8,-7));
+    //    document.write(Math.max(23,2,34,6,8,1,0,8,-7));
+    //    document.write(Math.abs(-19));
+    //    document.write("<BR>")
+    //    document.write("<BR>")
+    //    document.write(Math.round(20.62));// depends after . value if => 5-> upper bound if <5 lower bound
+    //    document.write("<BR>")
+    //    document.write(Math.floor(20.62)); //lower bound = 20
+    //    document.write("<BR>")
+    //    document.write(Math.ceil(20.22)); //upper bound = 21 
+        // document.write(Math.random()); //0 to 1  (0.9999999)
+        // document.write(Math.random()*10); //0 to 10 (9.9999)   
+        // document.write(Math.floor(Math.random()*10)); //0 to 10 (9.9999)  => Math.floor(9.999) =9  
+
+        // document.write(Math.floor(Math.random()*10+5)); //5 to 15 (14.9999)  => Math.floor(9.999) =9  
+
+        // document.write(Math.ceil(Math.random()*15+5)); //5 to 20 (19.9999)  => Math.ceil(19.999) =20 
+        // document.write(Math.floor(Math.random()*16+5)); //5 to 21 (20.9999)  => Math.floor(20.999) =20 
+        
+    </script>
+</body>
+</html>
