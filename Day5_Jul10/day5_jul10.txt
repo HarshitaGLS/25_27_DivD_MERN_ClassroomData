@@ -1,0 +1,84 @@
+abc@gmail.com
+abc 
+
+1. split("@")[0]
+2. slice(0,str.indexOf("@"))
+3. substring(0,)
+//////////////////////
+
+Date object - 
+
+RegExp - 
+
+1. Character Classes
+Expression	                Meaning	                                Example
+.	                        Any single character except newline	    a.c → abc, axc
+[abc]	                    Matches a, b, or c	                    [aeiou]
+[^abc]	                    Anything except a, b, c	                [^0-9]
+[a-z]	                    Lowercase letters	                    hello
+[A-Z]	                    Uppercase letters	                    HELLO
+[0-9]	                    Digits	                                123
+[a-zA-Z]	                Any alphabet	                        Hello
+[a-zA-Z0-9]	                Letters and digits	                    abc123
+
+
+2. Shortcuts
+Expression	                Meaning	                            Equivalent
+\d	                        Digit	                            [0-9]
+\D	                        Not a digit	                        [^0-9]
+\w	                        Word character	                    [a-zA-Z0-9_]
+\W	                        Not a word character	            [^a-zA-Z0-9_]
+\s	                        White space	                        Space, tab, newline
+\S	                        Not a white space	                Any visible character
+
+
+3. Quantifiers
+Expression	                Meaning
+*	                        0 or more times
++	                        1 or more times
+?	                        0 or 1 time (optional)
+{3}	                        Exactly 3 times
+{2,5}	                    Between 2 and 5 times
+{2,}	                    At least 2 times
+
+4. Anchors
+Expression	                Meaning
+^	                        Beginning of string
+$	                        End of string
+
+5. Groups
+Expression	                Meaning
+(abc)	                    Group
+(a|b)	                    Either a or b
+
+6. Escape Characters
+Use \ before special symbols.
+
+Expression	                Meaning
+\.	                        Actual dot
+\*	                        Actual *
+\+	                        Actual +
+\?	                        Actual ?
+\\	                        Backslash
+
+username - alphabets only 
+/^[a-zA-Z]+$/
+/^[a-zA-Z]{2,3}$/
+/^[^\s#]+$/
+/^[a-zA-Z]+\@$/
+
+symbol data type 
+
+userdefined object  -
+
+
+form handling - 
+event object 
+
+Rest parameter  - ... => grouping in the form of array or object
+spread operator - ... => split array or object into indi.
+if ... are before any array name or object name - it means we are using spread operator to spread or split the array/object into indi. values.
+
+destructuring assignment of array -
+
+ 

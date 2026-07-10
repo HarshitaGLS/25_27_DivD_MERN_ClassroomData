@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="date" id="mydate">
+    <button type="button" onclick="fetchDate()">Fetch Date</button>
+    <p id="data"></p>
+
+    <script>
+      let today =  new Date()
+    //   document.write(`${today}<Br>`)
+    //   document.write(`${today.getFullYear()}<Br>`)
+    //   document.write(`${today.getMonth()}<Br>`) //0 - jan  ,11 -dec
+    //   today.setMonth(11)
+    //   document.write(`${today}<Br>`)
+        // let mydate1 = new Date("2026-07-02") //7 july
+        let mydate1 = new Date(2026,8,20,2,20,33) //8 july
+
+        document.write(mydate1)
+
+    //   document.write(`${today.toISOString()}<Br>`) //2026-07-10T04:31:57.697Z
+
+        document.getElementById("mydate").min = new Date().toISOString().split("T")[0]
+
+        let fetchDate = ()=>{
+            let data = document.getElementById("data") //"2026-07-02"
+            data.innerHTML = document.getElementById("mydate").value
+        }
+    </script>
+</body>
+</html>

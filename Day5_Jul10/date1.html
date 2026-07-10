@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="date" id="mydate">
+    <button type="button" onclick="fetchDate()">Fetch Date</button>
+    <p id="data" style="color:red"></p>
+
+    <script>
+        let fetchDate = ()=>{
+            let data = document.getElementById("data")
+            let mydate =  document.getElementById("mydate").value //"2026-07-02"
+            //convert mydate string var into Date object
+            let mydate1 = new Date(mydate) 
+            let d = new Date() //current date
+            if(mydate1 > d)
+                 data.innerHTML = "date should not be futuristic"
+            else 
+                 data.innerHTML=""
+        }
+    </script>
+</body>
+</html>
