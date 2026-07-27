@@ -14,8 +14,9 @@ let student = {
 // console.log(fname)
 // console.log(lname)
 let {fname:fn,mobile} = student
-let {fname,...remaining} = student //fname="Harshita" 
-//remaining = { lname:"Maheshwari", mobile:98776656, isMarried:true }
+let {fname,isMarried,...remaining} = student //fname="Harshita" ,
+// isMarried:true
+//remaining = { lname:"Maheshwari", mobile:98776656,  }
 
 
 
