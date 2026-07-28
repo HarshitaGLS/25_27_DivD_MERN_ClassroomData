@@ -1,0 +1,64 @@
+nodejs - 
+frontend - javascript
+backend - php, java, .net etc.
+database - sql 
+
+2009 - Ryan Dhal => nodejs 
+
+written in c++ + built on top of v8 engine 
+
+nodejs is
+asynchnorous javascript 
+single threaded 
+event driven 
+non blocking 
+run javascript on console (server side)
+use javascript on backend side ( to write APIs)
+
+
+request -> response 
+
+client send request ---> wait for response
+response received  then only client can send the next req 
+
+processes       time 
+p1                5   
+p2                8
+p3                3
+
+ts -  2ms 
+p1 -> p5-> p3->p1->p2->p3
+
+lexical scoping 
+
+npm  -  node package manager 
+module -  
+1. core  - http, url, path, fs, dns, os, https etc.
+2. third party - npm 
+install ways- 
+1. local (in project) - npm i express
+2. global (in system) - npm i -g express 
+
+3. user defined 
+
+module - came in 2015
+before 2015 - commonjs (for import we uses require and exports )
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
