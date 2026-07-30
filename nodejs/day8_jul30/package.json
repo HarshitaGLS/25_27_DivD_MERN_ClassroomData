@@ -1,0 +1,16 @@
+{
+  "name": "day8_jul30",
+  "version": "1.0.0",
+  "description": "",
+  "main": "prime.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^17.4.2",
+    "nodemon": "^3.1.14"
+  }
+}

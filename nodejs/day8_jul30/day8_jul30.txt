@@ -1,0 +1,25 @@
+to create package.json -
+npm init 
+
+npm init --y
+
+fs
+http
+dns
+os
+path
+url
+https 
+stream
+buffer etc.
+
+
+npm i nodemon 
+npm i dotenv
+
+
+js object -> json string => JSON.stringify(jsobj)
+json string -> js object => JSON.parse(json string)
+
+fs - file system
+
