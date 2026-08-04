@@ -1,0 +1,82 @@
+<script src=""></script>
+<script src="" defer></script>
+<script src="" async></script>
+
+fs 
+fs with promise 
+stream 
+command line arguments
+event
+//////////////////////
+
+npm i - will create node_modules folder with the dependencies mention in package-lock.json file
+
+////////////////////////
+Permissions -
+0o777	Everyone can read, write, execute:	rwxrwxrwx
+0o755	Owner:rwx, Others:r-x	:rwxr-xr-x
+0o700	Only owner has all permissions:	rwx------
+0o666	Everyone can read and write:	rw-rw-rw-
+0o644	Owner can read/write, others read only:	rw-r--r--
+0o600	Only owner can read/write:	rw-------
+
+777
+│││
+││└── Others
+│└─── Group
+└──── Owner
+
+Value	Permission
+4	    Read (r)
+2	    Write (w)
+1	    Execute (x)
+
+
+///////////////////
+
+Stream - 
+SF -------> Read Buffer -----> readfile --> writefile ------> write buffer ------> DF write 
+
+
+SF ---> read buffer---> readfile
+        (chunk) 
+streaming - 
+
+chunk ---> storing in the memory --> use it ---> freeing memory
+data processing more efficient 
+
+Types -
+1. readable stream  -  from where we read data chunk by chunk 
+2. writeable stream  -  to which we can write data chunk by chunk 
+3. duplex stream - readable and writeable at the same time 
+                    ex-  web socket 
+4. transform stream - modify or transform data as it is read or written 
+                    ex-  zlib (compression and decompression)
+                         uppercase 
+
+
+readable stream - request stream ,readfile 
+                events - data, end 
+                methods - read and pipe 
+
+writable stream - response stream , writefile 
+                    events - drain and finish 
+                    methods - write and end
+
+server.listen()
+server.on("listen",()=>{})
+
+///////////////////////////////////////////////////
+process.argv
+
+[
+  '/usr/bin/node',
+  '/path/app.js',
+  'Ram',
+  '25'
+]
+
+////////////////////////
+
+readline 
+
