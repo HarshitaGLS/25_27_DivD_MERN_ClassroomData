@@ -1,0 +1,27 @@
+[
+  {
+    "deptno": "Admin",
+    "dname": "Administration",
+    "location": "Ahmedabad"
+  },
+  {
+    "deptno": "IT",
+    "dname": "Information Technology",
+    "location": "Surat"
+  },
+  {
+    "deptno": "HR",
+    "dname": "Human Resources",
+    "location": "Vadodara"
+  },
+  {
+    "deptno": "QA",
+    "dname": "Quality Assurance",
+    "location": "Rajkot"
+  },
+  {
+    "deptno": "Finance",
+    "dname": "Finance Department",
+    "location": "Bhavnagar"
+  }
+]
