@@ -1,22 +1,12 @@
 import User from "../models/User.js"
 import bcrypt from "bcryptjs"
-import jwt from "jsonwebtoken"
+import generateToken from "../utils/generateToken.js"
 
-// Generate JWT Token
-const generateToken = (userId) => {
-  return jwt.sign(
-    { id: userId },
-    process.env.JWT_SECRET,
-    {
-      expiresIn: "7d"
-    }
-  );
-};
 
 // REGISTER USER => POST /api/auth/register
 const registerUser = async (req, res) => {
   try {
-    const { name, email, password, role } = req.body;
+    const { name, email, password, role } = req.body; //destructuring 
 
     // 1. Check required fields
     if (!name || !email || !password) {
@@ -26,7 +16,7 @@ const registerUser = async (req, res) => {
     }
 
     // 2. Check if user already exists
-    const existingUser = await User.findOne({ email });
+    const existingUser = await User.findOne({ email }); //enhanced object literal
 
     if (existingUser) {
       return res.status(400).json({
@@ -64,8 +54,6 @@ const registerUser = async (req, res) => {
     });
 
   } catch (error) {
-    console.error(error);
-
     res.status(500).json({
       message: "Server error",
       error: error.message
@@ -139,8 +127,7 @@ const loginUser = async (req, res) => {
 const getCurrentUser = async (req, res) => {
   try {
 
-    const user = await User.findById(req.user.id)
-      .select("-password");
+    const user = await User.findById(req.user.id).select("-password");
 
     if (!user) {
       return res.status(404).json({
@@ -148,13 +135,9 @@ const getCurrentUser = async (req, res) => {
       });
     }
 
-    res.status(200).json({
-      user
-    });
+    res.status(200).json({ user });
 
   } catch (error) {
-    console.error(error);
-
     res.status(500).json({
       message: "Server error",
       error: error.message

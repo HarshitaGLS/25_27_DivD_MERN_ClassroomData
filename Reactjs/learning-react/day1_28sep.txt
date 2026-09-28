@@ -1,0 +1,63 @@
+react- 
+SPA
+component based archi -  reusability
+
+component  -  basic reusable block of code 
+             function or class 
+
+component name -  first letter capital /pascalcase 
+             Navbar or App  or Button etc.
+
+All tags are paired here -
+html tags - small letter
+<br></br> or <br/>
+<input></input> or <input/>
+<App></App> or <App/>
+
+
+function App(){ return JSX }
+let App = ()=>{ return <div>
+                         <h1>Hello from App</h1>
+                         <p>rhewr</p>
+                      </div>
+                    }
+
+
+<App/>
+
+function app(){ return "erheh" }
+app()
+
+
+React Fragment - 
+1 <React.Fragment></React.Fragment>
+
+2 import {Fragment} from "react"
+    <Fragment></Fragment>
+
+3 <></>
+
+
+
+
+
+
+
+
+
+
+<div id="" class="">
+    <p>khwhr</p>
+    <b>ddkjrhw</b>
+</div>
+<Propsdemo 
+        empid={eid} 
+        isActive = {isActive}
+        hobbies = {["dance","cricket","travelling","gossip"]}> 
+         <p>khwhr</p>
+        <b>ddkjrhw</b>
+        <FirstComp/>
+</Propsdemo>
+
+children  props 
+props.children
