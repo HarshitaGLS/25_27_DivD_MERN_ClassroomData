@@ -1,0 +1,64 @@
+<div id="" class=""></div>
+<div id="" className=""></div>
+
+<label for=""></label>
+<label htmlFor=""></label>
+
+html attribute - class ,for
+DOM Property - className , htmlFor
+
+vitrual DOM  -  copy of real dom 
+dom - browser creates dom 
+react fiber 
+
+props - props are read only
+event  - onClick 
+
+state - react variable 
+encapsulation  - setter function 
+function comp -  concepts of hooks (readymade functions)
+useState
+useEffect 
+useRef 
+useTransition 
+useContext (global variable)
+custom hooks 
+etc..
+
+&& = shortcircuit operator  (simple if)
+|| = (simple else)
+?: = if else 
+
+
+style = { {color:"red", backgroundColor:"yellow", margin:"10px" , paddingLeft:"20px"} }
+
+useState(value) => anything null, "" , any number , string, array or object
+
+
+
+///////////////////////////
+need to study -  
+virutal DOM and react fiber
+array map function
+destructure
+enhanced object literal
+spread operator
+event object 
+
+
+Array 
+Array of objects - products - card (component - reuse)
+images import 
+form handling 
+
+
+
+
+
+
+
+
+
+
+
+
