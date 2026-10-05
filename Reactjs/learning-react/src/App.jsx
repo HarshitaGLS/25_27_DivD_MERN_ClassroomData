@@ -5,6 +5,9 @@ import Propsdemo from "./components/day1_28sep/Propsdemo"
 import Counter from "./components/day2_1oct/Counter"
 import Counter1 from "./components/day2_1oct/Counter1"
 import Eventdemo from "./components/day2_1oct/eventdemo"
+import Form1 from "./components/day3_05oct/Form1"
+import ListRendering from "./components/day3_05oct/ListRendering"
+import ProductList from "./components/day3_05oct/ProductList"
 
 function App() {
   let eid= 1234
@@ -27,7 +30,10 @@ function App() {
           {/* <Counter/> */}
           {/* <Counter1/> */}
 
-          <Eventdemo/>
+          {/* <Eventdemo/> */}
+          {/* <ListRendering/> */}
+          {/* <ProductList/> */}
+          <Form1/>
     </>
   )
 }

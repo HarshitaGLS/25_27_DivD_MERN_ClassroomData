@@ -1,0 +1,6 @@
+Array 
+Array of objects - products - card (component - reuse)
+images import 
+form handling 
+controlled component -  react handle form - using state 
+uncontrolled component -  js dom - useRef hook
