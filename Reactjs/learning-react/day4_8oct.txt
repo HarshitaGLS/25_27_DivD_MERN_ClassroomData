@@ -1,0 +1,11 @@
+  let [user,setUser] = useState({email:"abc@gmail.com",password:12345})
+ //let user  = {email:"abc@gmail.com",password:12345}
+ 
+  value= {user.email}
+ onChange={(e)=>setUser({...user,email:e.target.value})}/>
+ 
+ let user = {email:"ram@gmail.com",password:12345}
+
+ value= {user.password}
+ onChange={(e)=>setUser({...user,password:e.target.value})}/>
+ let user = {email:"ram@gmail.com",password:"ram@123"}

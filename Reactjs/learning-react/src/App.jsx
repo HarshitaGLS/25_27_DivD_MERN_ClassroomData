@@ -8,6 +8,8 @@ import Eventdemo from "./components/day2_1oct/eventdemo"
 import Form1 from "./components/day3_05oct/Form1"
 import ListRendering from "./components/day3_05oct/ListRendering"
 import ProductList from "./components/day3_05oct/ProductList"
+import EvenOddForm from "./components/day4_08oct/EvenOddForm"
+import FormValidation from "./components/day4_08oct/FormValidation"
 
 function App() {
   let eid= 1234
@@ -33,7 +35,9 @@ function App() {
           {/* <Eventdemo/> */}
           {/* <ListRendering/> */}
           {/* <ProductList/> */}
-          <Form1/>
+          {/* <Form1/> */}
+          {/* <EvenOddForm/> */}
+          <FormValidation/>
     </>
   )
 }
