@@ -1,0 +1,60 @@
+<Comp1>
+    <Com1/>
+    <Com2/>
+    <h1></h1>
+</Comp1>
+
+Comp1 - 
+{props.children}
+
+<Routes>
+    <Route element=<App/>>
+        <Route path="" element=<Home/>/>
+        <Route path="about" element=<About/>/>
+    </Route>
+</Routes>
+<Outlet/>
+
+
+==================================
+isLoggedIn:true 
+
+isLoggedIn:false 
+
+flux - redux - redux toolkit 
+
+react -  context - useContext hook 
+
+
+Action 
+Store 
+Reducer 
+state variable (data)
+=========================================
+
+Cake Shop -
+customer -> Buy Cake (Action)
+Shopkeeper  -> Reducer
+Cake Shelf - store (only 1 store)
+state (cake, brownie, chocolates, pastires, cookies, cold candels edible)
+cake dealer  - Sell Cake (Action)
+
+
+react app ---> Action ---> Reducer ----> store (states)
+Store -------> react app 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
