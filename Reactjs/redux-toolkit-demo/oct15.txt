@@ -1,0 +1,30 @@
+
+
+Action 
+Store 
+Reducer 
+state variable (data)
+=========================================
+
+Cake Shop -
+customer -> Buy Cake (Action)
+Shopkeeper  -> Reducer
+Cake Shelf - store (only 1 store)
+state (cake, brownie, chocolates, pastires, cookies, cold candels edible)
+cake dealer  - Sell Cake (Action)
+
+            useDispatch()
+react app ---------------> Action ------------> Reducer (functionalities) -----------> store (states)
+
+        useSelector()
+Store -----------------> react app 
+
+
+npm install @reduxjs/toolkit react-redux
+
+
+LOGINUSER:(state,action)=>{
+            console.log(action)
+        },
+
+        action-  type of action and payload (data)
