@@ -1,0 +1,67 @@
+Onclick 
+onblur 
+onchange 
+onsubmit 
+onload 
+onunload 
+component – load 
+component – state variable update - update
+component  - unload 
+
+useEffect() hook  -  load , unload, modify
+
+useEffect(callback, dep array)
+ useEffect(()=>{} ,[]) = component load
+ useEffect(()=>{} ,[count]) = component count update
+ useEffect(()=>{} ,[count,name ]) = component count or name update
+
+ useEffect(()=>{ return ()} ,[])
+
+================================
+
+fetch API -  js provides 
+axios - npm i axios 
+
+async and await and try catch 
+
+
+fetch("url") => by default get method 
+fetch("url",{
+    Method:"POST",
+    headers:{"content-type":"application/json"},
+    body: json data 
+})
+fetch("url", {method:"DELETE"})
+
+axios.get("url")
+axios.post("url",data)
+axios.put("url",data)
+axios.delete("url")
+
+
+==============
+http://localhost:5000/api - get 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

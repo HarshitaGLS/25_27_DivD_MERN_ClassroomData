@@ -1,6 +1,6 @@
 import express from "express"
 import "dotenv/config"
-import mongoose from "mongoose"
+import cors from "cors"
 
 import userRoute from "./routes/userRoute.js"
 import connectDB from "./config/dbconnect.js"
@@ -8,6 +8,7 @@ import connectDB from "./config/dbconnect.js"
 const PORT = process.env.PORT || 1400
 const app = express()
 app.use(express.json())
+app.use(cors())
 connectDB(process.env.MONGO_URI) // calling the connect db function
 
 //http://localhost:3000/api
