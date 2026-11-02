@@ -1,12 +1,23 @@
-import {  useState } from "react"
-import { addUser } from "../apiservices";
-import { useNavigate } from "react-router";
+import {  useEffect, useState } from "react"
+import { addUser, getUserById, updateUser } from "../apiservices";
+import { useNavigate, useParams } from "react-router";
 
 const initialForm = { name: "", email: "", mobile: "",isActive: true}
 const UserForm = ()=> {
   const [formData, setFormData] = useState(initialForm)
   const navigate = useNavigate()
- 
+  //edit
+  const {id} = useParams()
+   const fetch=async()=>{
+        const data = await getUserById(id)
+         setFormData(data)
+    }
+  useEffect(()=>{
+    if(id){fetch()}
+    else setFormData(initialForm)
+  },[id])
+
+
   const handleChange = (e) => {
     const { name, value, type, checked } = e.target
     setFormData({
@@ -17,19 +28,27 @@ const UserForm = ()=> {
 
   const handleSubmit = async(e) => {
     e.preventDefault()
-    try{
-      const res =  await addUser(formData)
+    if(!id){//add
+       try{
+      await addUser(formData)
       navigate("/users")
-      // console.log(res)
-
     }
-    catch(err){ console.log(err.message)}
+    catch(err){ console.log(err.message)}   
+    }
+    else { //update
+  try{
+      await updateUser(id,formData)
+      navigate("/users")
+    }
+    catch(err){ console.log(err.message)}   
+    }
+   
 
   };
 
   return (
     <>
-      <h2>Add New User</h2>
+      <h2>{id ? "Edit" :"Add New"} User</h2>
     <div className="container col-6">
       <form onSubmit={handleSubmit}>
         <div className="form-group mb-3">
@@ -77,7 +96,7 @@ Active
   </label>
 </div>
 
-        <button type="submit" className="btn btn-primary">Add User</button>
+        <button type="submit" className="btn btn-primary">{id?"Update":"Add"} User</button>
       </form>
       </div>
     </>

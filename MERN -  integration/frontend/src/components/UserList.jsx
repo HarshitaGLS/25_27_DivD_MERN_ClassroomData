@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { getUsers } from "../apiservices.js";
+import { deleteUser, getUsers } from "../apiservices.js";
 import { Link } from "react-router";
 import {BsEye, BsPen, BsTrash} from "react-icons/bs"
 const UserList = ()=> {
@@ -15,6 +15,18 @@ const UserList = ()=> {
     }
   }
   useEffect(()=>{fetch()},[])
+  const handleDelete=async(id)=>{
+    if(window.confirm("Are you sure to delete")){
+    try{
+      await deleteUser(id)
+      fetch()
+    }
+    catch(err){
+        alert(err.res?.data?.message)
+    }
+    }
+   
+  }
   return (
     <div className="card mt-5 p-3">
       <div className="row">
@@ -50,9 +62,12 @@ const UserList = ()=> {
               <td>{user.isActive ? <span className="text-success">Active</span>:"Inactive"}</td>
 
               <td>
-                <button  type="button"class="btn btn-primary me-2" ><BsEye/></button>
-                <button  type="button"class="btn btn-success me-2" ><BsPen/></button>
-                <button  type="button"class="btn btn-danger me-2" ><BsTrash/></button>
+                <Link  type="button"class="btn btn-primary me-2" 
+                to={`/user/details/${user._id}`}><BsEye/></Link>
+                <Link  type="button"class="btn btn-success me-2" 
+                to={`/edituser/${user._id}`}><BsPen/></Link>
+                <button  type="button"class="btn btn-danger me-2" 
+                onClick={()=>handleDelete(user._id)}><BsTrash/></button>
                 
               </td>
               </tr>)}

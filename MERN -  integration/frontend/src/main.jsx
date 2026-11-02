@@ -9,6 +9,7 @@ import Home from "./components/Home.jsx"
 import UserList from "./components/UserList"
 import UserForm from "./components/UserForm"
 import PageNotFound from "./components/PageNotFound"
+import UserDetails from './components/UserDetails.jsx'
 
 createRoot(document.getElementById('root')).render(
 <BrowserRouter>
@@ -17,6 +18,8 @@ createRoot(document.getElementById('root')).render(
             <Route path="" index={true} element={<Home/>}/>
             <Route path="users" element={<UserList/>}/>
             <Route path="adduser" element={<UserForm/>}/>
+            <Route path="edituser/:id" element={<UserForm/>}/>
+            <Route path="user/details/:id" element={<UserDetails/>}/>
         </Route>
         <Route path="*" element={<PageNotFound/>}/>
     </Routes>
