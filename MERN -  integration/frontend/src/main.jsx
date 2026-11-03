@@ -10,11 +10,13 @@ import UserList from "./components/UserList"
 import UserForm from "./components/UserForm"
 import PageNotFound from "./components/PageNotFound"
 import UserDetails from './components/UserDetails.jsx'
+import Theme from './Theme.jsx'
+
 
 createRoot(document.getElementById('root')).render(
 <BrowserRouter>
    <Routes>
-        <Route path="/" element={<App/>}>
+        <Route path="/" element={<Theme><App/></Theme>}>
             <Route path="" index={true} element={<Home/>}/>
             <Route path="users" element={<UserList/>}/>
             <Route path="adduser" element={<UserForm/>}/>

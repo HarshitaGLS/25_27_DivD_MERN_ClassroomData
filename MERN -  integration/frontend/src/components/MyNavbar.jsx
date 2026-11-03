@@ -1,5 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router'
+import ThemeBtn from './ThemeBtn'
 
 const MyNavbar = () => {
   return (
@@ -29,6 +30,11 @@ const MyNavbar = () => {
                     </li>
                       <li class="nav-item">
                         <Link class="nav-link" to="/adduser">Add User</Link>
+                    </li>
+                </ul>
+                <ul className="navbar-nav mt-2 mt-lg-0">
+                    <li className="nav-item">
+                        <ThemeBtn/>
                     </li>
                 </ul>
             </div>
